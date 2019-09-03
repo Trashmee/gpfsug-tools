@@ -11,7 +11,7 @@ PRINT=false
 NOT_ENDED=true
 
 IFS=$'\n'
-for line in $( cat mmlsconfig.wien ) ; do
+for line in $( mmlsconfig ) ; do
   if [[ $line =~ "File systems in cluster" ]] ; then
     PRINT=false
     NOT_ENDED=false
